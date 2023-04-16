@@ -1,3 +1,3 @@
-const uppercase = (str: string) => str.toUpperCase();
+const convertUppercase = (str: string) => str.toUpperCase();
 
-export default uppercase;
+export default convertUppercase;

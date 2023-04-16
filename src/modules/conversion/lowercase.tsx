@@ -1,3 +1,3 @@
-const lowercase = (str: string) => str.toLowerCase();
+const convertLowercase = (str: string) => str.toLowerCase();
 
-export default lowercase;
+export default convertLowercase;

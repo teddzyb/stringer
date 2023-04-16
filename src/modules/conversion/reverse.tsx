@@ -1,3 +1,3 @@
-const reverse = (str: string) => Array.from(str).reverse().join('');
+const convertReverse = (str: string) => Array.from(str).reverse().join('');
 
-export default reverse;
+export default convertReverse;
