@@ -11,7 +11,7 @@ const Index = () => {
         />
       }
     >
-      <div className="font-bold">Stringer</div>
+      <h1 className="font-bold">Stringer</h1>
     </Main>
   );
 };
