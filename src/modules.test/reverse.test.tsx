@@ -1,4 +1,4 @@
-import convertReverse from '../../modules/conversion/reverse';
+import convertReverse from '../modules/reverse';
 
 describe('convert reverse function', () => {
   it('should reverse a string', () => {

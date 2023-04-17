@@ -1,4 +1,4 @@
-import convertUppercase from '../../modules/conversion/uppercase';
+import convertUppercase from '../modules/uppercase';
 
 describe('convert uppercase function', () => {
   it('should convert a string to uppercase', () => {

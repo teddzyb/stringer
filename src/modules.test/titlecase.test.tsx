@@ -1,4 +1,4 @@
-import convertTitlecase from '../../modules/conversion/titlecase';
+import convertTitlecase from '../modules/titlecase';
 
 describe('convert titlecase function', () => {
   it('should convert the first character of each word to uppercase', () => {

@@ -1,4 +1,4 @@
-import convertLowercase from '../../modules/conversion/lowercase';
+import convertLowercase from '../modules/lowercase';
 
 describe('convert lowercase function', () => {
   it('should convert a string to lowercase', () => {

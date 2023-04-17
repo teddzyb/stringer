@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import { Meta } from '@/layouts/Meta';
-import convertLowercase from '@/modules/conversion/lowercase';
-import convertReverse from '@/modules/conversion/reverse';
-import convertTitlecase from '@/modules/conversion/titlecase';
-import convertUppercase from '@/modules/conversion/uppercase';
+import convertLowercase from '@/modules/lowercase';
+import convertReverse from '@/modules/reverse';
+import convertTitlecase from '@/modules/titlecase';
+import convertUppercase from '@/modules/uppercase';
 import { Main } from '@/templates/Main';
 
 const Index = () => {
@@ -46,7 +46,7 @@ const Index = () => {
           className="mt-2 h-40 w-full rounded border border-gray-300 p-2"
         />
       </div>
-      <div className="flex gap-2 pt-6">
+      <div className="flex flex-wrap gap-2.5 pt-6">
         <button
           onClick={() => {
             setOutput(convertUppercase(input));
