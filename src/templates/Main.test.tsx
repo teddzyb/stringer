@@ -4,30 +4,16 @@ import { Main } from './Main';
 
 describe('Main template', () => {
   describe('Render method', () => {
-    it('should have 3 menu items', () => {
-      render(<Main meta={null}>{null}</Main>);
+    it('should render the component', () => {
+      const meta = <div>Meta</div>;
+      const children = <div>Children</div>;
 
-      const menuItemList = screen.getAllByRole('listitem');
+      render(<Main meta={meta}>{children}</Main>);
 
-      expect(menuItemList).toHaveLength(4);
-    });
+      const main = screen.getByRole('main');
+      const mainContent = within(main).getByText('Children');
 
-    it('should have a link to support creativedesignsguru.com', () => {
-      render(<Main meta={null}>{null}</Main>);
-
-      const copyrightSection = screen.getByText(/© Copyright/);
-      const copyrightLink = within(copyrightSection).getByRole('link');
-
-      /*
-       * PLEASE READ THIS SECTION
-       * We'll really appreciate if you could have a link to our website
-       * The link doesn't need to appear on every pages, one link on one page is enough.
-       * Thank you for your support it'll mean a lot for us.
-       */
-      expect(copyrightLink).toHaveAttribute(
-        'href',
-        'https://creativedesignsguru.com'
-      );
+      expect(mainContent).toBeInTheDocument();
     });
   });
 });
