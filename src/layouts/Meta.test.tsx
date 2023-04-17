@@ -14,10 +14,10 @@ jest.mock(
 
 describe('Meta component', () => {
   describe('Render method', () => {
-    it('should a page title', async () => {
-      const title = 'Random title';
+    it('should have a page title', async () => {
+      const title = 'Some title';
 
-      render(<Meta title={title} description="Random description" />);
+      render(<Meta title={title} description="Some description" />);
 
       await waitFor(() => {
         expect(document.title).toEqual(title);
